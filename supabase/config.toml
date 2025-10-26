@@ -1,0 +1,16 @@
+# Supabase配置
+[database]
+port = 54321
+schema = "public"
+
+[api]
+port = 54321
+schemas = ["public"]
+extra_search_path = ["public", "extensions"]
+
+[auth]
+site_url = "http://localhost:5173"
+additional_redirect_urls = ["http://localhost:5173/auth/callback"]
+
+[storage]
+file_size_limit = "50

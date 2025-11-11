@@ -1,0 +1,28 @@
+# 本地hosts文件配置
+# 请手动添加到您的hosts文件中
+
+# Windows: C:\Windows\System32\drivers\etc\hosts
+# Mac/Linux: /etc/hosts
+
+# 添加以下内容：
+10.1.114.89 paperac.com
+10.1.114.89 www.paperac.com
+
+# 验证命令：
+# ping paperac.com  # 应该显示10.1.114.89
+
+# 注意：
+# 1. Windows需要以管理员身份编辑
+# 2. Mac/Linux需要sudo权限
+# 3. 修改后可能需要清除DNS缓存
+
+# Windows清除DNS缓存：
+# ipconfig /flushdns
+
+# Mac清除DNS缓存：
+# sudo dscacheutil -flushcache && sudo killall -HUP mDNSResponder
+
+# Linux清除DNS缓存：
+# sudo systemctl restart NetworkManager
+# 或
+# sudo service network-manager restart

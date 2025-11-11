@@ -54,7 +54,8 @@ app.use((req, res) => {
   res.status(404).json({ error: '接口不存在' })
 })
 
-app.listen(PORT, () => {
+app.listen(PORT, '0.0.0.0', () => {
   console.log(`🚀 服务器运行在端口 ${PORT}`)
   console.log(`📊 健康检查: http://localhost:${PORT}/api/health`)
+  console.log(`🌐 内网访问地址: http://10.1.114.89:${PORT}/api/health`)
 })

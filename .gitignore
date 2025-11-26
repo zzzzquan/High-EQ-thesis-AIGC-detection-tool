@@ -1,0 +1,5 @@
+# 环境变量
+.env
+
+# macOD
+.DS_Store
